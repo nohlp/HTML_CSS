@@ -7,19 +7,24 @@
 </head>
 
 <body>
-        <header><h1>MAN1</h1></header>
-        <hr>
+    <div class="container">
+        <header><h1 class="logo">MAN1</h1>
+            <ul class="mainMenu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+        </header>
 
-        <ul class="mainMenu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-
-    <hr>
+    <br class="clr">
 
     <h1 class="commodityHeader">Alex Пена для бритья Sport</h1>
+    <div class="commodityDescriptionData">
+    <div class="commodityImage">
     <a href="images/alex-pena-dlya-britya-sport.jpg" target="_blank"><img src="images/alex-pena-dlya-britya-sport.jpg" class="commodityImage" width="200px"></a>
+    </div>
+
+    <div class="commodityDescription">
     <h3 class="commodityHeader">Описание товара</h3>
     <p class="shortDescription">Формула пены с витаминным комплексом...</p>
     <h3 class="commodityHeader">Характеристики товара</h3>
@@ -30,9 +35,50 @@
             <li><strong>Цена:</strong> 120.00 руб.</li>
         </ol>
     </p>
+    <button class="btn buttonBuy" value="купить">купить</button>
+
+    <a href="#" class="btn red">купить</a>
+        <table border="0" cellspacing="1" cellpadding="3" class="commodityProperties">
+                <tr>
+                    <th colspan="3">Характеристики товара</th>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="propRow">Параметры изделия А:</td><td>11</td><td>53</td>
+                    
+                </tr>
+                <tr>
+                       <td>11</td><td>13</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="propRow">Параметры изделия Б:</td><td>43</td><td>69</td>
+                </tr>
+                <tr>
+                        <td>17</td><td>83</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="propRow">Параметры изделия В:</td><td>43</td><td>19</td>
+                </tr>
+                <tr>
+                        <td>17</td><td>53</td>
+                </tr>
+                <tr>
+                        <td rowspan="2" class="propRow">Параметры изделия Г:</td><td>43</td><td>49</td>
+                </tr>
+                <tr>
+                            <td>27</td><td>83</td>
+                </tr>
+            </table>
+
+    <div style="display:none;">
     <h3 class="commodityHeader">Подробное описание товара</h3>
     <p class="fullDescription">Формула пены с витаминным комплексом: тонизирует кожу в процессе бритья, дарит неповторимый заряд свежести Одобрено дерматологами.</p>
-    <hr><footer> &copy; Все права защищены</footer>
+    
+    </div>
+    </div>
+    </div>
+    <br class="clr"><br>
+    
+    <footer><div class="footerContainer"><span> &copy; Все права защищены</span></div><div class="footerLine"></div></footer>
+</div>
 </body>
-
 </html>
