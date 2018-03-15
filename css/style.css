@@ -23,6 +23,21 @@ header h1{
     font-family: Arial, Helvetica, sans-serif;;
     float:left;
 }
+.headerRight{
+    float:right;
+    text-align: right;
+}
+#social{
+    float: right;
+    width:200px;
+    display: flex;
+    justify-content: space-around;
+}
+.socialList a{
+    text-decoration: none;
+}
+
+
 footer{
     height:200px;
     border-top:2px solid #5cbee6;
@@ -126,10 +141,12 @@ ul.footerSubmenu li a:hover{
 ul.mainMenu{
     list-style-type: none;
     margin-right: 0px;
+    margin-top:0px;
     padding: 0;
     overflow: hidden;
     background-color: #fff;
-    float:right;
+    width: 350px;
+
 }
 
 ul.mainMenu li{
@@ -411,4 +428,70 @@ p:first-letter{
 .contactMap{
     width:100%;
     height: 347px;
+}
+
+
+
+/*
+********************************* MEDIA ***********************************
+*/
+
+@media screen and (min-width:1200px){
+
+}
+
+@media screen and (min-width:600px) and (max-width:1199px){
+    ul.catalog li {
+        width: calc(100% - 120px);
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:599px){
+    .right{
+        width: 100%;
+        margin:0;
+    }
+    ul.catalog{
+        width:100%;
+    }
+    ul.catalog li {
+        
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:1199px){
+    .left{
+        display: none;
+    }
+    .right{
+        width:100%;
+        margin-left:0px;
+    }
+    .commodityImage a img{
+        width:98%;
+    }
+    .commodityDescription{
+        width:100%;
+    }
+    .commodityProperties {
+
+        width: 100%;
+    }
+
+    ul.footerMenu li{
+        display: none;
+    }
+    
+    ul.footerMenu li:nth-last-child(2)
+    {
+        display: block;
+    }
+
+    ul.footerMenu li:last-child
+    {
+        display: block;
+    }
+    .subscribeInputText{
+        width:60% !important;
+    }
 }
